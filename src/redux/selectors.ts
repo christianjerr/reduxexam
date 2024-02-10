@@ -10,12 +10,3 @@ export const itemRes = createSelector(
   }
 );
 
-export const itemStates = createSelector(
-  rootState,
-  (rootState: models.InitialStateTypes) => {
-    return (
-      rootState.itemInitial.map((state) => state.states) ||
-      models.InitialState.itemInitial.map((state) => state.states)
-    );
-  }
-);
